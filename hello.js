@@ -6,7 +6,9 @@ const hellos = [
     'annyeonghaseyo'
 ]
 
-export function sayHello() {
-    const index = Math.floor(Math.random() * hello.length)
-    return hellos[index]
+modules.export = {
+    sayHello() {
+        const index = Math.floor(Math.random() * hellos.length)
+        return hellos[index]
+    }
 }

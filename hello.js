@@ -6,8 +6,8 @@ const hellos = [
     'annyeonghaseyo'
 ]
 
-modules.export = {
-    sayHello() {
+module.exports = {
+    sayHello: () => {
         const index = Math.floor(Math.random() * hellos.length)
         return hellos[index]
     }
